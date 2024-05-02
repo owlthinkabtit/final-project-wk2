@@ -4,6 +4,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter" , sans-serif;
+    border-width: 0;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
+}
+
+.app {
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
 }
 
 
@@ -25,9 +34,34 @@ html {
     margin: 0 12px 0px 0px;
 }
 
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+ font-size: 48px;
+ color: #1a202c;   
+}
+
+p {
+    color: #243e63;
+    font-size: 18px;
+    margin: 32px 0;
+}
+
+img {
+    margin-top: 1rem;
+    width: 100%;
+    opacity: 0.5;
+}
+
+/* NAVIGATION */
+
 .nav__link--logo {
     display: flex;
-    font-size: 0px 24px 0px 0px;
+    font-size: 24px;
     text-decoration: none;
     font-weight: bold;
     color: #243e63;
@@ -67,4 +101,41 @@ html {
     padding: 12px 32px;
     color: rgb(247, 250, 252)
 
+}
+
+/* LANDING */
+
+.two--column__container {
+    position: relative;
+}
+
+.two--column__input {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.two--column__left {
+    max-width: none;
+    width:40%;
+    text-align: left;
+    flex-direction: column;
+}
+
+.left--column__para {
+    font-size: 18px;
+    margin: 32px 0;
+    color: #243e63;
+}
+
+.two--column__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
