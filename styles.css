@@ -10,8 +10,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .row {
   width: 100%;
   max-width: 1200px;
@@ -34,6 +32,7 @@ h5 {
 
 .nav__container {
   padding: 32px;
+  min-height: 100vh;
 }
 
 .nav {
@@ -219,8 +218,15 @@ h5 {
 
 /* MAIN */
 
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main__container {
-  padding: 6rem 0;
+  padding: 32px;
+  overflow-x: hidden;
 }
 
 .features--container {
@@ -263,29 +269,26 @@ h5 {
   list-style-type: none;
 }
 
-.service--content {
-  margin: 8px 0px 0px 16px;
-  padding: 32px 8px;
-}
 .service--wrapper {
   width: calc(100% / 3);
   display: flex;
 }
 
-.service--title {
+/*.service--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 0px 16px;
+  padding: 32px 8px;
+}
+*/
+.service__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.025em;
   margin: 16px 0px 0px;
   color:rgb(36, 62, 99);
-}
-
-.service--para {
-  margin-top: 1rem;
-  font-weight: 500;
-  line-height: 2;
-  color: rgb(124, 139, 161);
 }
 
 .service__img--wrapper {
@@ -301,6 +304,75 @@ h5 {
   margin-right: 2rem;
 }
 
+.service__para {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  color: #7c8ba1;
+}
 
+.service__img {
+  align-content: center;
+}
+
+/* DESIGN */
+
+.quality__container {
+  padding: 96px 0;
+}
+
+.quality__row {
+  display: flex;
+}
+
+.quality__description {
+  width: 100vh;
+  margin-right: 72px;
+}
+
+.quality__title {
+  font-size: 48px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px 0 0;
+}
+
+
+.quality__para {
+  color: #7c8ba1;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.quality__button {
+  border: none;
+  color: #fff;
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: 500ms ease;
+  cursor: not-allowed;
+}
+
+.quality__button:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(65, 12, 172);
+}
+
+.quality__img--wrapper {
+  max-width: 640px;
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 4px;
+}
+
+.quality__img {
+  width: 100%;
+}
 
 
