@@ -636,7 +636,7 @@ h5 {
   position: relative;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .price__monthly {
