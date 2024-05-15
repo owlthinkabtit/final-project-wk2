@@ -844,16 +844,17 @@ h5 {
 /* GET STARTED */
 
 .background--container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 96px 0px;
   margin-bottom: 4rem;
   width: 100%;
   max-width: 1280px;
   background-color: #6415ff;
   border-radius: 0.5rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   border-radius: 0.5rem;
+  position: relative;
 }
 
 .get--started__row {
@@ -908,12 +909,13 @@ footer {
   justify-content: space-around;
   border-bottom: solid;
   border-color: rgb(116 44 255);
+  margin: 64px 32px 0;
 }
 
 .footer__nav--section {
   display: flex;
   flex-direction: column;
-  
+  margin: 48px 0 0;
 }
 
 .footer__title {
@@ -969,6 +971,7 @@ footer {
 .footer__links {
   display: flex;
   justify-content: space-between;
-  
+  margin: 64px 32px;
+
  }
 
