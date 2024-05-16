@@ -26,6 +26,14 @@ h5 {
   letter-spacing: 0.1rem;
 }
 
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: rgb(188, 188, 188);
+  display: none;
+}
+
 /* NAVIGATION */
 
 .nav__container {
@@ -105,13 +113,16 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  padding: 96px 0px;
+  margin: 0px 128.5px;
 }
 
 .header__info {
-  width: 40%;
+  width: 41.6667%;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  max-width: none;
 }
 
 .header__img--wrapper {
@@ -131,7 +142,8 @@ h5 {
 }
 
 .header--para {
-  margin: 2rem 0;
+  color: #243e63;
+  margin: 32px 0;
   font-size: 18px;
   text-align: left;
   font-weight: 400;
@@ -157,7 +169,7 @@ h5 {
 .header__form--bg {
   padding: 0.25rem 0;
   border: 2px solid rgba(36, 62, 99, 0.1);
-  border-radius: 80px;
+  border-radius: 9999px;
 }
 
 .header__form {
@@ -169,9 +181,12 @@ h5 {
 .input {
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 465px;
+  text-align: center;
+  max-width: 28rem;
   width: 100%;
+  position: relative;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .header--button {
@@ -187,7 +202,7 @@ h5 {
 }
 
 .header__input {
-  border: 0;
+  border: 0px;
   border-radius: 9999px;
   color: black;
   font-weight: 500;
@@ -975,3 +990,37 @@ footer {
 
  }
 
+ /* SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
+
+
+@media (max-width: 768px) {
+
+  .nav__links {
+    display: none;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .header__title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .header--para {
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .btn__menu {
+    display: block;
+  }
+
+  .btn__menu:hover {
+    background-color: rgb(100, 11, 255);
+  }
+}
