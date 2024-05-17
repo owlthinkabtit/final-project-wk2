@@ -540,7 +540,7 @@ h5 {
 
 .values__small--wrapper {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
   margin-left: -0.6rem;
@@ -627,7 +627,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 2rem 5.5rem;
 }
 
@@ -649,9 +649,12 @@ h5 {
 .pricing__list {
   display: flex;
   position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 32px 0px;
+  margin: 64px 32px 0px 0px;
+  width: 100%;
+  
 }
 
 .price__monthly {
@@ -860,8 +863,7 @@ h5 {
 
 .background--container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   padding: 96px 0px;
   margin-bottom: 4rem;
   width: 100%;
@@ -873,13 +875,21 @@ h5 {
 }
 
 .get--started__row {
-  margin: 0px 111px;
+  margin: 0px 100.5px;
   padding: 0px 32px;
+  position: relative;
+
+}
+
+.started__container {
+  padding: 96px 0px;
+  margin: 0px 77px;
+  
 }
 
 .getstarted__text {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
   text-align: left;
 }
 
@@ -905,6 +915,11 @@ h5 {
   cursor: pointer;
   margin-left: auto;
   padding: 1.25rem 2rem;
+}
+
+.getstarted__links {
+  margin-top: 0px;
+  justify-content: flex-end;
 }
   
 /* FOOTER */
@@ -981,6 +996,7 @@ footer {
   padding: 8px;
   border-radius: 24px;
   filter: invert(100%);
+  background color: white;
 }
 
 .footer__links {
