@@ -204,6 +204,9 @@ h5 {
 .header__input {
   border: 0px;
   border-radius: 9999px;
+  border-width: 1px;
+  width: 100%;
+  padding-left: 2rem;
   color: black;
   font-weight: 500;
   font-size: 16px;
@@ -285,14 +288,6 @@ h5 {
   display: flex;
 }
 
-/*.service--content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0px 0px 16px;
-  padding: 32px 8px;
-}
-*/
 .service__title {
   font-size: 24px;
   font-weight: 700;
@@ -530,26 +525,38 @@ h5 {
 
 .values__small--info {
   display: flex;
-  margin: 2rem 0;
+  margin-top: 1rem;
+  text-align: left;
 }
 
 .values__small--container {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .values__small--wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
-  margin-left: -0.6rem;
+
 }
 
-.values__small--img--wrapper {
-  width: 3.5rem;
-  height: 2.5rem;
-  margin-right: 0.5rem;
+.values__small--img--wrapper1 {
+  background-color: rgb(154 230 180);
+  color: rgb(39 103 73);
+  padding: 10px;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+}
+
+.values__small--img--wrapper2 {
+  background-color: rgb(254 178 178);
+  color: rgb(155 44 44);
+  padding: 8px;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
 }
 
 .values__small--title {
@@ -563,6 +570,7 @@ h5 {
   line-height: 1.625;
   color: rgb(113, 128, 150);
 }
+
 
 /* PRICING */
 
@@ -615,12 +623,14 @@ h5 {
 
 .price__container {
   display: flex;
+  position: relative;
   flex-direction: column;
-  box-shadow: 5px 5px 10px rgba(235, 232, 232, 0.5);
-  margin-bottom: 3rem;
+  width:100%;
   border: 1px solid rgb(226, 232, 240);
-  border-radius: 15px;
-  padding: 2em;
+  border-radius: 0.5rem;
+  padding: 8px 32px;
+  margin: 64px 32px;
+  box-shadow: 5px 5px 10px rgba(235, 232, 232, 0.5);
 }
 
 .price--wrapper {
@@ -628,7 +638,8 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 5.5rem;
+  padding: 32px 0px;
+  margin: 0px -32px;
 }
 
 .price__subtitle {
@@ -651,8 +662,6 @@ h5 {
   position: relative;
   flex-direction: row;
   justify-content: space-between;
-  padding: 8px 32px 0px;
-  margin: 64px 32px 0px 0px;
   width: 100%;
   
 }
@@ -861,23 +870,107 @@ h5 {
 
 /* GET STARTED */
 
-.background--container {
+.gs__styledcontainer {
+  margin-bottom: 6rem;
+}
+
+.gs__border {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gs__primarycontainer {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: rgb(100, 21, 255);
+}
+
+.gs__row {
+  flex-direction: row;
+  text-align: left;
+  z-index: 10;
+  margin: 0px 128px;
+  display: flex;
+  max-width: 1024px;
+  align-items: center;
+  padding: 0px 32px;
+}
+
+.gs__text--container {
+  width: 50%;
+  max-width: 32rem;
+}
+
+.gs__text {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.gs__link--container {
+  margin-top: 0px;
+  justify-content: flex-end;
+  display: flex;
+  width: 50%;
+  max-width: 32rem;
+}
+
+.gs__btn {
+  border: none;
+  color: #fff;
+  background-color: #f56565;
+  padding: 20px 40px;
+  margin: 0px 32px 0px 0px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 500ms ease;
+  cursor: not-allowed;
+}
+
+.cs__btn {
+  color: rgb(247, 250, 252);
+  background-color:#6415ff;
+  --tw-border-opacity: 1;
+  border-color: rgb(160, 174, 192 / var(--tw-border-opacity));
+  border-style: solid;
+  border-width: medium;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: 500ms ease;
+  cursor: not-allowed;
+}
+/* GET STARTED */
+
+/* .background--container {
   display: flex;
   justify-content: center;
   padding: 96px 0px;
-  margin-bottom: 4rem;
+  margin: 0px 77px;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1024px;
   background-color: #6415ff;
-  border-radius: 0.5rem;
   border-radius: 0.5rem;
   position: relative;
 }
 
 .get--started__row {
-  margin: 0px 100.5px;
-  padding: 0px 32px;
   position: relative;
+  display: flex;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  z-index: 10;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
 }
 
@@ -890,7 +983,6 @@ h5 {
 .getstarted__text {
   font-weight: 700;
   font-size: 30px;
-  text-align: left;
 }
 
 .link--1 {
@@ -919,7 +1011,7 @@ h5 {
 
 .getstarted__links {
   margin-top: 0px;
-  justify-content: flex-end;
+  flex-direction: row;
 }
   
 /* FOOTER */
@@ -1039,4 +1131,5 @@ footer {
   .btn__menu:hover {
     background-color: rgb(100, 11, 255);
   }
+  
 }
