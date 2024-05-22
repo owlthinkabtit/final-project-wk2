@@ -191,7 +191,7 @@ h5 {
   font-weight: 700;
   font-size: 16px;
   --tw-text-opacity: 1;
-  color: white;  / var(--tw-text-opacity);
+  color: white;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 300ms;
 
