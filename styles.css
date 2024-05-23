@@ -1138,23 +1138,6 @@ footer {
   .nav__links {
     display: none;
   }
-
-  .header__container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .header__title {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .header--para {
-    font-size: 10px;
-    text-align: center;
-  }
   
   .btn__menu {
     display: block;
@@ -1163,5 +1146,23 @@ footer {
   .btn__menu:hover {
     background-color: rgb(100, 11, 255);
   }
+
+  .plans__container {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .plan__container--purple {
+    position: relative;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 24rem;
+  }
   
+
 }
