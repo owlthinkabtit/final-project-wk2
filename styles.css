@@ -176,7 +176,6 @@ h5 {
 
 
 .tc__btn {
-  position: absolute;
   width: 10rem;
   right: 0px; 
   top: 0px;
@@ -200,6 +199,7 @@ h5 {
   color: white;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 300ms;
+  position: absolute;
 
 }
 
@@ -1154,6 +1154,11 @@ footer {
   .nav__links {
     display: none;
   }
+
+  .row {
+    min-width: 50%;
+    padding: 0 15px;
+  }
   
   .nav {
     display: none;
@@ -1234,15 +1239,16 @@ footer {
 
   .tc__input {
     padding: 20px 192px 20px 32px;
-    position: relative;
+    width: 25rem;
+    justify-content: center;
   }
 
   .tc__btn {
-    margin: 8px 8px 8px 0px;
-    padding: 16px 0px;
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     width: 10rem;
     line-height: 1;
-    align-items: flex-end;
   }
   /*QUALITY */
   
@@ -1343,5 +1349,10 @@ footer {
   }
   
   
+  .services--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
