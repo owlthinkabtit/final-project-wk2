@@ -1679,4 +1679,18 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .social--links {
+    display: none;
+  }
+
+  .copyright--text {
+    display: none;
+  }
+
+  .footer__logo--wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
 } 
